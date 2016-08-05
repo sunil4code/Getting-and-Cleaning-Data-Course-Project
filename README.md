@@ -2,6 +2,7 @@
 
 ###Below are the steps i followed to complete the assignment
 
+## Assumption: All requried files are available in the current working directory and file output is also written into that directory
 ### Step 1:
 
 1) Read in the training data into data frame  variable "X_train"
