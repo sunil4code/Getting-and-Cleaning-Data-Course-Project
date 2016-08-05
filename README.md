@@ -1,8 +1,8 @@
-# Getting-and-Cleaning-Data-Course-Project
-Final Project for the Coursera project "Getting and Cleaning Data Course Project"
+# Getting-and-Cleaning-Data-Course-Project Final Project for the Coursera project "Getting and Cleaning Data Course Project"
 
-Below are the steps i followed to complete the assignment
-Step 1:
+###Below are the steps i followed to complete the assignment
+
+### Step 1:
 
 1) Read in the training data into data frame  variable "X_train"
 
@@ -24,9 +24,9 @@ Step 1:
 
 Step 2: Extract columns that are means and standard devaitions
 
-From the features_info.txt file it is clear that variable names with "mean" in them are means ( mean(): Mean value ; meanFreq(): Weighted average of the frequency components to obtain a mean frequency ) So to get mean values we can grep for "mean"
+#### From the features_info.txt file it is clear that variable names with "mean" in them are means ( mean(): Mean value ; meanFreq(): Weighted average of the frequency components to obtain a mean frequency ) So to get mean values we can grep for "mean"
 
-For standard deviation according to the file the variable name has "std()" ( std(): Standard deviation) , so we can grep for "std()" to get standard devaition.  
+#### For standard deviation according to the file the variable name has "std()" ( std(): Standard deviation) , so we can grep for "std()" to get standard devaition.  
 
 10) Load the features files into r
 
@@ -38,7 +38,7 @@ For standard deviation according to the file the variable name has "std()" ( std
 
 14) Using "filterdVars" get all mean and standard deviation columns and store it in New_all_data
 
-Step 3: Using descriptive names for Activities
+### Step 3: Using descriptive names for Activities
 
 15) Load the activity_labels file into Activity_labels variable
 
@@ -49,11 +49,11 @@ Step 3: Using descriptive names for Activities
 
 18) Reorder the columns and make Subject first column , Actvity the second followed by all other columns
 
-Setp 4: Appropriately labels the data set with descriptive variable names.
+### Setp 4: Appropriately labels the data set with descriptive variable names.
 
 This has already been done in step 11. All variables has descriptive names
 
-Step 5:From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+### Step 5:From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 19) Group the data by suject and activity and find the means of all data columns
 
