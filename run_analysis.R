@@ -19,4 +19,4 @@ New_all_data  <- New_all_data[,c(2,82,3:81)]
 Tidy_New_data  <- aggregate(New_all_data[,3:81],list(New_all_data$Subject,New_all_data$`Activity Description`),mean)
 names(Tidy_New_data)[1]  <- "Subject"
 names(Tidy_New_data)[2]  <- "Activity Description"
-write.table(Tidy_New_data,"C:\\Users\\owner\\Dropbox\\Shared - Misc\\Cousera\\3\\data\\Week4Data.txt")
+write.table(Tidy_New_data,"C:\\Users\\owner\\Dropbox\\Shared - Misc\\Cousera\\3\\data\\Week4Data.txt",row.names = FALSE)
